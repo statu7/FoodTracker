@@ -440,7 +440,7 @@
 				78A7E03722FD552200D363A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		78A7E03822FD552200D363A1 /* Build configuration list for PBXNativeTarget "FoodTracker" */ = {
 			isa = XCConfigurationList;
@@ -449,7 +449,7 @@
 				78A7E03A22FD552200D363A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		78A7E03B22FD552200D363A1 /* Build configuration list for PBXNativeTarget "FoodTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -458,7 +458,7 @@
 				78A7E03D22FD552200D363A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
