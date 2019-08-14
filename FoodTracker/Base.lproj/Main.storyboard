@@ -47,6 +47,7 @@
                                     <outlet property="nameLabel" destination="AxT-bQ-CnP" id="N0U-rE-I3y"/>
                                     <outlet property="photoImageView" destination="jcx-WC-Kba" id="TD0-Vg-p7M"/>
                                     <outlet property="ratingControl" destination="lVt-sr-EGW" id="KmB-b7-3C0"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="MbM-9d-HFy"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -58,7 +59,7 @@
                     <navigationItem key="navigationItem" title="Your Meals" id="GOz-gR-Qpv">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ux7-WT-s3r">
                             <connections>
-                                <segue destination="cn0-OB-hYI" kind="presentation" id="JTu-bu-ebk"/>
+                                <segue destination="cn0-OB-hYI" kind="presentation" identifier="AddItem" id="MTH-ad-BqT"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -84,7 +85,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
-                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="e00-2W-s0w">
+                                    <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="e00-2W-s0w">
                                         <rect key="frame" x="0.0" y="38.000000000000014" width="355" height="189.33333333333337"/>
                                         <gestureRecognizers/>
                                         <constraints>
@@ -182,10 +183,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Mn-sO-K2i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="847" y="115"/>
+            <point key="canvasLocation" x="844" y="538"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="MbM-9d-HFy"/>
+    </inferredMetricsTieBreakers>
 </document>
