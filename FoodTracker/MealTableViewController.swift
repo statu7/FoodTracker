@@ -11,7 +11,6 @@ import UIKit
 class MealTableViewController: UITableViewController {
     
     //MARK: Properties
-    
     var meals = [Meal]()
 
     override func viewDidLoad() {
@@ -23,7 +22,6 @@ class MealTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -32,9 +30,8 @@ class MealTableViewController: UITableViewController {
         return meals.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       
+
         // Table view cells are reused and should be dequeud using a cell identifier.
         let cellIdentifier = "MealTableViewCell"
        
@@ -98,9 +95,21 @@ class MealTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    //MARK: Actions
+    @IBAction func unwindToMealList(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as?
+            MealViewController, let meal = sourceViewController.meal {
+            
+            // Add a new meal
+            let newIndexPath = IndexPath(row: meals.count, section: 0)
+            
+            meals.append(meal)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+        
+    }
     
     //MARK: Private Methods
-    
     private func loadSampleMeals() {
         
         let photo1 = UIImage(named: "meal1")
